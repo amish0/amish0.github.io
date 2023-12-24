@@ -1,0 +1,619 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+/* ===================================== Import Variables ================================== */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Arimo:300,400,400italic,700,700italic);
+/* ===================================== Basic CSS ==================================== */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #444; }
+
+a:hover {
+  color: #444; }
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0; }
+
+a:hover,
+a:focus,
+input,
+textarea {
+  text-decoration: none;
+  outline: none; }
+
+.center {
+  text-align: center; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.cp {
+  cursor: pointer; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+p {
+  margin-bottom: 0px;
+  width: 100%; }
+
+.no-padding {
+  padding: 0px; }
+
+.no-margin {
+  margin: 0px; }
+
+.hid {
+  display: none; }
+
+.top-mar {
+  margin-top: 15px; }
+
+.h-100 {
+  height: 100%; }
+
+::placeholder {
+  color: #747f8a !important;
+  font-size: 13px;
+  opacity: .5 !important; }
+
+.container-fluid {
+  padding: 0px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  color: #545454; }
+
+strong {
+  font-family: "Open Sans", sans-serif; }
+
+body {
+  background-color: #f1f1f145 !important;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #6A6A6A;
+  overflow-x: hidden; }
+
+.session-title {
+  padding: 30px;
+  margin: 0px;
+  margin-bottom: 20px; }
+  .session-title h2 {
+    width: 100%;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600; }
+  .session-title p {
+    max-width: 850px;
+    text-align: center;
+    float: none;
+    margin: auto;
+    font-size: .83rem;
+    margin-top: 15px; }
+  .session-title span {
+    float: right;
+    font-style: italic; }
+
+.inner-title {
+  padding: 20px;
+  padding-left: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #ccccccc4;
+  display: block;
+  padding-right: 0px; }
+  .inner-title h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 1px solid #863dd9;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    width: 300px; }
+  .inner-title p {
+    width: 100%;
+    text-align: center; }
+  .inner-title .btn {
+    float: right;
+    margin-top: -38px;
+    font-weight: 600;
+    font-size: .8rem; }
+
+.page-nav {
+  background-size: 100%;
+  padding: 68px;
+  text-align: center;
+  background-color: #eaeaea; }
+  .page-nav ul {
+    float: none;
+    margin: auto; }
+  @media screen and (max-width: 992px) {
+    .page-nav {
+      background-size: auto; } }
+  @media screen and (max-width: 767px) {
+    .page-nav {
+      padding-top: 100px; } }
+  @media screen and (max-width: 356px) {
+    .page-nav {
+      padding-top: 200px; } }
+  .page-nav h2 {
+    font-size: 28px;
+    width: 100%;
+    font-weight: 700;
+    color: #444; }
+    @media screen and (max-width: 600px) {
+      .page-nav h2 {
+        font-size: 26px; } }
+  .page-nav ul li {
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-size: .93rem;
+    font-weight: 600;
+    color: #444; }
+    .page-nav ul li i {
+      width: 30px;
+      text-align: center;
+      color: #444; }
+    .page-nav ul li a {
+      color: #444;
+      font-size: .93rem;
+      font-weight: 600; }
+
+.btn-success {
+  background-color: #51be78;
+  border-color: #51be78; }
+  .btn-success:hover {
+    background-color: #51be78 !important;
+    border-color: #51be78 !important; }
+  .btn-success:active {
+    background-color: #51be78 !important;
+    border-color: #51be78 !important; }
+  .btn-success:focus {
+    background-color: #51be78 !important;
+    border-color: #51be78 !important;
+    box-shadow: none !important; }
+
+.btn-primary {
+  background-color: #01b3a7;
+  border-color: #01b3a7; }
+  .btn-primary:hover {
+    background-color: #01b3a7 !important;
+    border-color: #01b3a7 !important; }
+  .btn-primary:active {
+    background-color: #01b3a7 !important;
+    border-color: #01b3a7 !important; }
+  .btn-primary:focus {
+    background-color: #01b3a7 !important;
+    border-color: #01b3a7 !important;
+    box-shadow: none !important; }
+
+.btn {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px; }
+
+.form-control:focus {
+  box-shadow: none !important;
+  border: 0px; }
+
+.btn-light {
+  background-color: #FFF;
+  color: #3F3F3F; }
+
+.collapse.show {
+  display: block !important; }
+
+.form-control:focus {
+  box-shadow: none;
+  border: 0px; }
+
+.form-control {
+  background-color: #F8F8F8;
+  margin-bottom: 20px; }
+  .form-control:focus {
+    background-color: #FFF;
+    border-color: #CCC; }
+
+.container {
+  max-width: 1170px; }
+  @media screen and (max-width: 575px) {
+    .container {
+      padding: 10px 15px; } }
+
+html {
+  scroll-behavior: smooth; }
+
+/* ===================================== Login Page Design CSS ==================================== */
+/* =================== Header Style Starts Here =================== */
+.home-screen {
+  background-image: url(../images/Profile.jpg);
+  background-size: 100%; }
+  .home-screen .scroll-to-fixed-fixed {
+    background-color: #FFF;
+    margin-top: -3px !important;
+    box-shadow: 0 0 30px 0 rgba(104, 104, 104, 0.08); }
+    .home-screen .scroll-to-fixed-fixed ul li a {
+      color: #444 !important; }
+    .home-screen .scroll-to-fixed-fixed .logo-gry {
+      display: block !important; }
+    .home-screen .scroll-to-fixed-fixed .logo-wt {
+      display: none !important; }
+    .home-screen .scroll-to-fixed-fixed .small-menu {
+      color: #444;
+      margin-top: -45px; }
+  .home-screen .logo img {
+    margin-top: 13px;
+    max-width: 250px; }
+  .home-screen .logo .logo-gry {
+    display: none; }
+  .home-screen .home-cover {
+    background-color: rgba(0, 0, 0, 0.45); }
+  .home-screen .header {
+    margin-top: 3px;
+    position: absolute;
+    width: 100%; }
+    .home-screen .header ul {
+      float: right; }
+      @media screen and (max-width: 957px) {
+        .home-screen .header ul {
+          padding-right: 10px; } }
+      .home-screen .header ul li {
+        float: left;
+        padding: 25px 16px;
+        font-weight: 700;
+        font-size: .9rem; }
+        .home-screen .header ul li a {
+          color: #FFF; }
+        @media screen and (max-width: 957px) {
+          .home-screen .header ul li {
+            padding: 25px 10px;
+            font-size: .85rem; } }
+      @media screen and (max-width: 767px) {
+        .home-screen .header ul {
+          background-color: #fff;
+          z-index: 999;
+          width: 100%;
+          position: absolute;
+          z-index: 99;
+          margin-left: -15px; }
+          .home-screen .header ul li {
+            float: none;
+            border-bottom: 1px solid #CCC;
+            padding: 15px 10px; }
+            .home-screen .header ul li a {
+              color: #444; } }
+  .home-screen .home-detail {
+    padding-top: 95px;
+    padding-bottom: 200px; }
+    .home-screen .home-detail .hom-img {
+      text-align: center; }
+      .home-screen .home-detail .hom-img img {
+        width: 80%; }
+    .home-screen .home-detail .homexp {
+      color: #FFF;
+      padding-top: 120px; }
+      @media screen and (max-width: 949px) {
+        .home-screen .home-detail .homexp {
+          padding-top: 20px; }
+          .home-screen .home-detail .homexp h2 {
+            font-size: 3rem !important;
+            text-align: center;
+            width: 100%; }
+          .home-screen .home-detail .homexp h5 {
+            font-size: 1.2rem !important; } }
+      @media screen and (max-width: 767px) {
+        .home-screen .home-detail .homexp {
+          text-align: center; } }
+      .home-screen .home-detail .homexp h2 {
+        color: #FFF;
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%; }
+      .home-screen .home-detail .homexp h5 {
+        color: #FFF;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%; }
+      .home-screen .home-detail .homexp span {
+        font-weight: 700;
+        font-size: 1.5rem; }
+        .home-screen .home-detail .homexp span a {
+          color: #fe9c2c; }
+      .home-screen .home-detail .homexp p {
+        margin-top: 20px;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 50px; }
+      .home-screen .home-detail .homexp .texda {
+        text-align: center; }
+        .home-screen .home-detail .homexp .texda a {
+          padding: 10px 20px;
+          border: 2px solid #FFF;
+          color: #FFF;
+          border-radius: 50px;
+          margin-top: 50px; }
+  @media screen and (max-width: 767px) {
+    .home-screen .socil-icon {
+      float: right;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin: auto; } }
+  .home-screen .socil-icon li {
+    float: left;
+    padding: 10px;
+    margin-top: 20px; }
+    .home-screen .socil-icon li a {
+      color: #dad6d6; }
+
+.small-menu {
+  float: right;
+  color: #fff;
+  font-size: 32px;
+  margin-top: -50px;
+  margin-right: 20px;
+  position: absolute;
+  right: 0px; }
+
+/* ===================================== About Style CSS ==================================== */
+.about-sestion {
+  background: #eee;
+  padding: 50px; }
+  @media screen and (max-width: 940px) {
+    .about-sestion {
+      padding: 30px 10px; } }
+  .about-sestion img {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    border-radius: 5px; }
+  .about-sestion p {
+    font-size: .95rem;
+    margin-bottom: 15px;
+    line-height: 27px; }
+  .about-sestion .btn {
+    margin-top: 15px; }
+
+/* ===================================== Services Style CSS ==================================== */
+.features {
+  padding: 50px; }
+  @media screen and (max-width: 940px) {
+    .features {
+      padding: 30px 10px; } }
+  .features .feature-row {
+    margin-top: 30px; }
+    .features .feature-row .feature-col {
+      text-align: left;
+      background-color: #FFF;
+      padding: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+      .features .feature-row .feature-col i {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #2b93bb;
+        margin-bottom: 20px; }
+      .features .feature-row .feature-col:hover {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+.more-features {
+  padding: 50px;
+  background-color: #fff; }
+  @media screen and (max-width: 940px) {
+    .more-features {
+      padding: 30px 10px; } }
+  .more-features .more-featur-ro {
+    margin-top: 20px; }
+    .more-features .more-featur-ro .more-feat {
+      display: flex;
+      margin-bottom: 30px; }
+      .more-features .more-featur-ro .more-feat .icon {
+        padding: 15px; }
+        .more-features .more-featur-ro .more-feat .icon img {
+          width: 110px; }
+      .more-features .more-featur-ro .more-feat .detail {
+        padding: 15px; }
+
+/* ===================================== Achievements CSS ================================== */
+.doctor-message {
+  background-image: url("../images/Profile.jpg");
+  background-attachment: fixed;
+  background-size: cover; }
+  .doctor-message .session-title h4 {
+    color: #FFF; }
+  .doctor-message .inner-lay {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    color: #FFF; }
+    @media screen and (max-width: 940px) {
+      .doctor-message .inner-lay {
+        padding: 30px 10px; } }
+    .doctor-message .inner-lay .numb {
+      text-align: center;
+      padding: 30px; }
+      .doctor-message .inner-lay .numb h3 {
+        font-size: 42px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #CCC;
+        margin-bottom: 20px;
+        color: #FFF; }
+
+/* ===================================== My work Style  ================================== */
+.gallery-filter {
+  width: 100%;
+  text-align: center; }
+  .gallery-filter .btn {
+    background-color: #FFF; }
+
+.gallery {
+  padding: 30px;
+  background-color: #FFF; }
+
+.gallery-title {
+  font-size: 36px;
+  color: #4f6dcd;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 70px; }
+
+.gallery-title:after {
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  left: 46.5%;
+  height: 45px;
+  border-bottom: 1px solid #4f6dcd; }
+
+.filter-button {
+  font-size: 18px;
+  border: 1px solid #4f6dcd;
+  border-radius: 5px;
+  text-align: center;
+  color: #FFF;
+  margin-bottom: 30px;
+  background-color: #4f6dcd !important; }
+
+.filter-button:hover {
+  font-size: 18px;
+  border: 1px solid #4f6dcd;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4f6dcd; }
+
+.btn-default:active .filter-button:active {
+  background-color: #4f6dcd;
+  color: white; }
+
+.port-image {
+  width: 100%; }
+
+.gallery_product {
+  margin-bottom: 30px; }
+
+.contact-rooo {
+  padding: 50px;
+  background-color: #FFF; }
+  @media screen and (max-width: 940px) {
+    .contact-rooo {
+      padding: 30px 10px; } }
+
+/* =================== Blog Style Starts Here =================== */
+.blog {
+  background-color: #f7f7f7;
+  padding: 50px; }
+  @media screen and (max-width: 940px) {
+    .blog {
+      padding: 30px 10px; } }
+  .blog .blog-row .blog-col {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35);
+    margin-bottom: 30px; }
+    .blog .blog-row .blog-col img {
+      margin-bottom: 20px;
+      width: 100%; }
+    .blog .blog-row .blog-col span {
+      color: #a09f9f;
+      font-size: .83rem; }
+    .blog .blog-row .blog-col h4 {
+      margin-top: 15px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      line-height: 26px; }
+    .blog .blog-row .blog-col p {
+      font-weight: 500;
+      font-size: .93rem;
+      line-height: 25px; }
+
+/* =====================================  Location Style  ================================== */
+.location {
+  background-color: #FFF; }
+  .location iframe {
+    width: 100%; }
+  .location .det {
+    padding: 50px 80px;
+    text-align: center;
+    font-size: .9rem; }
+    .location .det p {
+      text-align: center; }
+
+/* =====================================  Contat Us Style  ================================== */
+.contact-us {
+  padding: 50px;
+  background-color: #FBFBFB; }
+  .contact-us .contat-det {
+    text-align: center; }
+    .contact-us .contat-det i {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #4f6dcd; }
+    .contact-us .contat-det p {
+      font-size: 17px; }
+  .contact-us .sec-title p {
+    font-size: 16px; }
+
+/* ===================================== Copright Style  ================================== */
+.copy {
+  padding: 20px;
+  background-color: #FFFFFF;
+  color: #808080;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px; }
+  .copy p {
+    font-size: .85rem; }
+  .copy .foot-social li {
+    float: right;
+    padding: 0px 20px;
+    font-size: 14px; }
+  .copy .foot-social li {
+    color: #808080; }
+
+/* ===================================== Responsive Style CSS ==================================== */
+@media screen and (max-width: 991px) {
+  .home-screen {
+    background-size: auto; }
+
+  .we-are-making .text-part {
+    text-align: center; }
+
+  .we-are-making .text-part .count .count-sing {
+    margin-bottom: 20px; }
+
+  .headwe-nav .container {
+    padding: 10px; }
+
+  header .headwe-nav .nav-div .navbar-nav .nav-item .nav-link {
+    padding: 10px;
+    border-right: 0px; } }
+
+/*# sourceMappingURL=style.css.map */
