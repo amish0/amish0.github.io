@@ -62,54 +62,65 @@ $(document).ready(function () {
 });
 
 var publication_status = "hide"
+
 $(function () {
-    console.log("hello", publication_status);
+    
     $(".Publication_c").click(function (e) {
+        console.log("hello", publication_status);
         if (publication_status == "hide") {
             $('#about_us').hide();
             $('#publication').show();
             $('#services').hide();
             $('#gallery').hide();
-            publication_status = "Show"
+            publication_status = "Show";
+            // $("#home_container").load("publication.html"); 
+            // change background-image in homescreen class
+            $(".home-screen").css("background-image", "url(assets/images/pbg.jpg)");
         }
     });
 });
 
 $(function () {
-    console.log("hello", publication_status);
+    // console.log("hello", publication_status);
     $(".About_us_c").click(function (e) {
+        console.log("About us", publication_status);
         if (publication_status == "Show") {
             $('#about_us').show();
             $('#publication').hide();
             $('#services').show();
             $('#gallery').show();
-            publication_status = "hide"
+            publication_status = "hide";
+            $(".home-screen").css("background-image", "url(assets/images/Profile.jpg)");
         }
     });
 });
 
 $(function () {
-    console.log("hello", publication_status);
+    // console.log("services", publication_status);
     $(".Services_c").click(function (e) {
-        if (publication_status == "show") {
+        console.log("services", publication_status);
+        if (publication_status == "Show") {
             $('#about_us').show();
             $('#publication').hide();
             $('#services').show();
             $('#gallery').show();
-            publication_status = "hide"
+            publication_status = "hide";
+            $(".home-screen").css("background-image", "url(assets/images/Profile.jpg)");
         }
     });
 });
 
 $(function () {
-    console.log("hello", publication_status);
+    
     $(".Gallery_c").click(function (e) {
-        if (publication_status == "show") {
+        console.log("Gallery", publication_status);
+        if (publication_status == "Show") {
             $('#about_us').show();
             $('#publication').hide();
             $('#services').show();
             $('#gallery').show();
-            publication_status = "hide"
+            publication_status = "hide";
+            $(".home-screen").css("background-image", "url(assets/images/Profile.jpg)");
         }
     });
 });
