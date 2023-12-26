@@ -72,6 +72,7 @@ $(function () {
             $('#publication').show();
             $('#services').hide();
             $('#gallery').hide();
+            $("#blog").hide();
             publication_status = "Show";
             // $("#home_container").load("publication.html"); 
             // change background-image in homescreen class
@@ -89,6 +90,7 @@ $(function () {
             $('#publication').hide();
             $('#services').show();
             $('#gallery').show();
+            $("#blog").hide();
             publication_status = "hide";
             $(".home-screen").css("background-image", "url(assets/images/Profile.jpg)");
         }
@@ -104,6 +106,7 @@ $(function () {
             $('#publication').hide();
             $('#services').show();
             $('#gallery').show();
+            $("#blog").hide();
             publication_status = "hide";
             $(".home-screen").css("background-image", "url(assets/images/Profile.jpg)");
         }
@@ -119,6 +122,7 @@ $(function () {
             $('#publication').hide();
             $('#services').show();
             $('#gallery').show();
+            $("#blog").hide();
             publication_status = "hide";
             $(".home-screen").css("background-image", "url(assets/images/Profile.jpg)");
         }
