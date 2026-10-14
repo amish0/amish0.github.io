@@ -29,6 +29,57 @@
       href="assets/plugins/slider/css/owl.theme.default.css"
     />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <style>
+      .story-card {
+        background: #fff;
+        border: 1px solid #e9e9e9;
+        border-radius: 18px;
+        padding: 1.2rem;
+        box-shadow: 0 10px 25px rgba(20, 35, 58, 0.06);
+        height: 100%;
+      }
+      .story-card h4 {
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+        font-weight: 700;
+      }
+      .story-card p,
+      .story-card li {
+        color: #4e4e4e;
+        line-height: 1.7;
+      }
+      .story-card ul {
+        margin: 0.8rem 0 0 1.1rem;
+        padding: 0;
+      }
+      .story-diagram {
+        width: 100%;
+        background: linear-gradient(135deg, #f8fbff, #eef6ff);
+        border: 1px solid #dfeeff;
+        border-radius: 14px;
+        padding: 0.8rem;
+      }
+      .story-diagram svg {
+        width: 100%;
+        height: 140px;
+        display: block;
+      }
+      .story-card a {
+        color: #1b5ec7;
+        font-weight: 600;
+      }
+      .story-card .story-tag {
+        display: inline-block;
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        background: #edf4ff;
+        color: #1c4ec9;
+        padding: 0.35rem 0.65rem;
+        border-radius: 999px;
+        margin-bottom: 0.8rem;
+      }
+    </style>
   </head>
 
   <body>
@@ -54,6 +105,7 @@
                   <li class="About_us_c"><a href="#about_us">About Us</a></li>
                   <li class="Services_c"><a href="#services">Services</a></li>
                   <li class="Gallery_c"><a href="#gallery">Development</a></li>
+                  <li class="Stories_c"><a href="#stories">Stories</a></li>
                   <!-- <li class="Publication_c"><a href="#publication">Publications</a></li> -->
                   <li class="Publication_c"><a href="#">Publications</a></li>
                   <!-- <li><a href="#">Clients</a></li> -->
@@ -72,9 +124,9 @@
 
               <p>
                 Senior DevOps &amp; MLOps Engineer with 5+ years of hands-on
-                experience in CI/CD automation, AI deployment, production
-                infrastructure, container orchestration, and enterprise-scale ML
-                platform operations.
+                experience building and deploying AI systems, automating
+                production pipelines, and managing scalable infrastructure for
+                real-world industrial and enterprise environments.
               </p>
 
               <div class="texda">
@@ -92,13 +144,10 @@
       <div class="container">
         <div class="session-title row">
           <h2>About Me</h2>
-          <p><strong>Senior DevOps &amp; MLOps Engineer</strong></p>
+          <p><strong>Senior DevOps &amp; MLOps Engineer | AI Deployment Specialist</strong></p>
         </div>
         <div class="about-row row">
-          <div class="col-md-4">
-            <img src="assets/images/Profile.jpg" alt="" />
-          </div>
-          <div class="col-md-8">
+          <div class="col-md-12">
             <p>
               I am a Senior Engineer (System Analyst) at Tata Consultancy
               Services, where I drive end-to-end DevOps and MLOps pipeline
@@ -128,10 +177,11 @@
 
             <p>
               I enjoy turning research-driven prototypes into dependable,
-              production-ready systems, collaborating across AI, QA, backend,
-              and infrastructure teams to streamline delivery, reduce release
-              risk, and improve performance, availability, and operational
-              efficiency.
+              production-ready systems and building the operational backbone to
+              make AI work reliably in the real world. My work combines
+              engineering discipline, deployment automation, and cross-functional
+              collaboration to improve delivery speed, system stability, and
+              business impact.
             </p>
 
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed faucibus mauris, sed porta
@@ -161,7 +211,7 @@
     <section id="services" class="features container-fluid">
       <div class="container">
         <div class="row session-title">
-          <h2>My Services</h2>
+          <h2>Core Expertise</h2>
           <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p> -->
         </div>
         <div class="row feature-row">
@@ -431,6 +481,141 @@
       </div>
     </div>
 
+    <!-- ######################### Interesting Stories Starts Here #################### -->
+    <section id="stories" class="container-fluid" style="padding: 70px 0; background: #f7f9fb;">
+      <div class="container">
+        <div class="row session-title">
+          <h2>Interesting Engineering Stories</h2>
+          <p>
+            A few engineering stories that reflect how I approach difficult
+            problems: turning ideas into working systems, improving performance,
+            and making AI and automation reliable in real-world environments.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="story-card">
+              <div class="story-tag">Multi-camera</div>
+              <div class="story-diagram">
+                <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" aria-label="Multi-camera processing diagram">
+                  <rect x="14" y="48" width="52" height="34" rx="6" fill="#5b6cff" opacity="0.90"/>
+                  <rect x="82" y="30" width="48" height="54" rx="8" fill="#cce6ff"/>
+                  <rect x="140" y="30" width="48" height="54" rx="8" fill="#cce6ff"/>
+                  <rect x="198" y="30" width="48" height="54" rx="8" fill="#cce6ff"/>
+                  <rect x="86" y="98" width="160" height="20" rx="10" fill="#0d9f78" opacity="0.85"/>
+                  <circle cx="84" cy="62" r="5" fill="#ffcc00"/>
+                  <circle cx="142" cy="62" r="5" fill="#ffcc00"/>
+                  <circle cx="200" cy="62" r="5" fill="#ffcc00"/>
+                  <path d="M66 65 L82 65 M130 65 L140 65 M188 65 L198 65" stroke="#4a4a4a" stroke-width="2.4"/>
+                  <path d="M150 98 L150 84" stroke="#4a4a4a" stroke-width="2.4"/>
+                  <text x="45" y="118" font-size="10" fill="#27364d" text-anchor="middle">Cams</text>
+                  <text x="150" y="112" font-size="10" fill="#ffffff" text-anchor="middle">Parallel threads</text>
+                </svg>
+              </div>
+              <h4>Multi-camera tracking at speed</h4>
+              <p>
+                <a href="https://github.com/amish0/multiple-webcam-multi-thread" target="_blank" rel="noreferrer">multiple-webcam-multi-thread</a>
+                was built to push multiple video streams through parallel workers
+                instead of a single blocking pipeline. The goal was simple: make
+                real-time monitoring faster, smoother, and more scalable.
+              </p>
+              <ul>
+                <li>Parallel stream processing</li>
+                <li>Reduced latency in multi-video setups</li>
+                <li>Useful for surveillance and vision demos</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="story-card">
+              <div class="story-tag">Object tracking</div>
+              <div class="story-diagram">
+                <svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" aria-label="Object tracking diagram">
+                  <rect x="18" y="58" width="78" height="42" rx="10" fill="#2d7ae0" opacity="0.9"/>
+                  <rect x="118" y="38" width="160" height="82" rx="14" fill="#eaf6ff" stroke="#a9d3ff"/>
+                  <rect x="140" y="56" width="38" height="18" rx="6" fill="#ffce54"/>
+                  <rect x="194" y="56" width="52" height="18" rx="6" fill="#6cc7a9"/>
+                  <rect x="142" y="82" width="102" height="18" rx="6" fill="#b7d8ff"/>
+                  <path d="M96 79 L118 79" stroke="#2d7ae0" stroke-width="3"/>
+                  <path d="M166 100 L166 125 M196 100 L196 125" stroke="#3d3d3d" stroke-width="2.2"/>
+                  <circle cx="166" cy="126" r="5" fill="#ff5d5d"/>
+                  <circle cx="196" cy="126" r="5" fill="#4ba9ff"/>
+                  <text x="56" y="107" font-size="10" fill="#1f2d3d" text-anchor="middle">Detection</text>
+                  <text x="198" y="118" font-size="10" fill="#203d62" text-anchor="middle">Identity + motion</text>
+                </svg>
+              </div>
+              <h4>Tracking is more than detection</h4>
+              <p>
+                The <a href="https://github.com/amish0/Tracker" target="_blank" rel="noreferrer">Tracker</a>
+                project focuses on persistent object identity across frames. In
+                practical terms, it is about keeping track of the same object as it
+                moves through crowded scenes and changing viewpoints.
+              </p>
+              <ul>
+                <li>Multiple tracker families</li>
+                <li>Identity association across frames</li>
+                <li>Useful for surveillance and intelligent monitoring</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="story-card">
+              <div class="story-tag">Robotics</div>
+              <div class="story-diagram" style="padding: 0; overflow: hidden;">
+                <img
+                  src="https://raw.githubusercontent.com/amish0/swarm_boat/main/img/main.png"
+                  alt="AI boat system overview from swarm_boat repository"
+                  style="display: block; width: 100%; height: 140px; object-fit: cover; border-radius: 14px;"
+                />
+              </div>
+              <h4>Autonomous robot decision-making</h4>
+              <p>
+                <a href="https://github.com/amish0/swarm_boat" target="_blank" rel="noreferrer">swarm_boat</a>
+                is a strong example of embedded intelligence: a small autonomous
+                boat combining sensing, motion control, obstacle avoidance, and
+                telemetry to make decisions in real time.
+              </p>
+              <ul>
+                <li>ESP32 + motor control</li>
+                <li>Obstacle avoidance logic</li>
+                <li>Browser and telemetry-based monitoring</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 1.8rem;">
+          <div class="col-md-4 offset-md-4">
+            <div class="story-card">
+              <div class="story-tag">Smart city</div>
+              <div class="story-diagram" style="padding: 0; overflow: hidden; background: #eef5ff;">
+                <img
+                  src="https://github.com/amish0/Smart_Traffic_monitoring/blob/main/docs/General_Architecture.png?raw=1"
+                  alt="Smart traffic monitoring architecture from the Smart_Traffic_monitoring repository"
+                  style="display: block; width: 100%; height: 140px; object-fit: contain; background: #eef5ff; border-radius: 14px;"
+                />
+              </div>
+              <h4>Smart traffic monitoring</h4>
+              <p>
+                <a href="https://github.com/amish0/Smart_Traffic_monitoring" target="_blank" rel="noreferrer">Smart_Traffic_monitoring</a>
+                reflects my interest in building practical city-scale intelligence
+                using computer vision and analytics — turning live streams into
+                insights for movement patterns, vehicle flow, and monitoring.
+              </p>
+              <ul>
+                <li>Traffic flow analysis</li>
+                <li>Computer vision for urban monitoring</li>
+                <li>Real-time decision support and insights</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ######################### Publication Starts Here #################### -->
     <div id="publication" class="container-fluid publication">
       <div class="container">
@@ -613,38 +798,26 @@
     <div id="blog" class="container-fluid blog">
       <div class="container">
         <div class="row session-title">
-          <h2>Our Blog</h2>
+          <h2>Career Highlights</h2>
           <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p> -->
         </div>
         <div class="blog-row row">
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="blog-col">
-              <h4>To Be Updated</h4>
-              <!-- <img src="assets/images/destination/d1.jpg" alt="">
-                        <span>August 9, 2019</span>
-                        <h4>Orci varius consectetur adipiscing natoque penatibus</h4>
-                        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                            Praesent accumsan, leo in venenatis dictum, </p> -->
+              <h4>CI/CD &amp; Release Automation</h4>
+              <p>Built and managed deployment pipelines, release processes, and Git-based workflows across development, validation, and production lifecycles.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="blog-col">
-              <h4>To Be Updated</h4>
-              <!-- <img src="assets/images/destination/d2.jpg" alt="">
-                        <span>August 9, 2019</span>
-                        <h4>Orci varius consectetur adipiscing natoque penatibus</h4>
-                        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                            Praesent accumsan, leo in venenatis dictum, </p> -->
+              <h4>AI &amp; MLOps Deployment</h4>
+              <p>Delivered AI applications in production environments with containerization, orchestration, model tracking, and rollout support.</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="blog-col">
-              <h4>To Be Updated</h4>
-              <!-- <img src="assets/images/destination/d3.jpg" alt="">
-                        <span>August 9, 2019</span>
-                        <h4>Orci varius consectetur adipiscing natoque penatibus</h4>
-                        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                            Praesent accumsan, leo in venenatis dictum, </p> -->
+              <h4>Industrial Automation</h4>
+              <p>Worked on embedded and edge AI systems for manufacturing, monitoring, and operational decision support in real-world environments.</p>
             </div>
           </div>
         </div>
@@ -727,7 +900,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            <p>Copyright © 2025 Amish Kumar</p>
+            <p>Copyright © 2025 Amish Kumar | DevOps &amp; MLOps Engineer</p>
           </div>
           <div class="col-sm-4">
             <ul class="foot-social">
